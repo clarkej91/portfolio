@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="app.js" charset="utf-8"></script>
+  <title>Portfolio</title>
+
+</head>
+<body>
+  <nav id="navbar">
+    <h1><a href="#aboutme">About Me</a></h1>
+    <h1><a href="#projects">Projects</a></h1>
+    <h1><a href="#contact">Contact</a></h1>
+  </nav>
+
+  <div class="aboutme" id="aboutme">
+    <h2>About Me</h2>
+    <img class="aboutpic"src="./images/jake.JPG" alt="">
+    <h2>HELLO! I'm Jake,</h2>
+      <p>
+        From full time touring musician turned full stack developer, my hard work and passion drives me to exceed. Whether it be from touring the world or developing applications, my mentality is still the same. Hard work does not go unnoticed and the more dedicated I am to my craft, the more I can help others grow and see their vision come to fruition.
+      </p>
+    <h1>Skills</h1>
+      <p>
+        Javascript,  jQuery,  Express,  Mongo,  CSS,  HTML,  GIT,  GITHUB,  React, MySQL, PostgreSQL, Ruby on rails, AngularJS, Node.js
+      </p>
+  </div>
+  <hr>
+  <div class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="container">
+    <a href="https://wahlinventory.herokuapp.com/home">
+    <img class="projectImg" src="https://www.qstockinventory.com/wp-content/uploads/2014/03/Medical-Inventory-Control.jpg" alt="">
+    </a>
+    <p class="description">*Description* </br>
+      App design to keep track of inventory at a local Dentist,
+      built with React, Rails, PostgreSQL
+    </p>
+  </div>
+  </div>
+  <hr>
+  <div class="contact" id="contact">
+    <h2>Contact</h2>
+  <p>
+    Please contact me if you want to discuss web design, are interested in my services or expertise, or just want to say hi!
+  </p>
+    <h3>jacobjamesclarke@gmail.com</h3>
+    <p>Phialdelphia,</br>
+      Pennsylvania
+    </p>
+    <a href="https://github.com/clarkej91">
+      <img class="icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Git Hub">
+    </a>
+    <a href="https://www.linkedin.com/in/jacobjamesclarke/">
+      <img class="icon" src="http://digitalgrowth.ca/wp-content/uploads/2016/08/linkedin-icon.jpg" alt="linkedin">
+    </a>
+  </div>
+  </div>
+  <footer>
+    
+  </footer>
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
