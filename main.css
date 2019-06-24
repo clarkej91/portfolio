@@ -97,13 +97,36 @@ Hover over effect
 }
 
 /*//////////////////
-button
+divs
+//////////////////*/
+
+.div1 {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+.div2 {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+.divdescription {
+  display: inline-flex;
+  flex-direction: row;
+  width: 88%;
+}
+
+/*//////////////////
+container
 //////////////////*/
 
 .container {
-  position: relative;
+  display: inline-flex;
+  flex-direction: row;
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
 }
 
 .container img {
